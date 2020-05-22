@@ -1,10 +1,15 @@
 import React from "react";
 import { Header } from "../components/header";
+import { Footer } from "../components/footer";
+import { ScrollToTop } from "../components/scrolltotop";
+import { CookiesBanner } from "../components/cookies";
 
 export default () => {
   return (
     <>
-      <Header />
+      <Header
+        activePage="o-firmie"
+      />
       <div class="page_title">
           <div class="container">
               <div class="title"><h1>O firmie</h1></div>
@@ -24,6 +29,11 @@ export default () => {
           </div>
         </div>
       </div>
+
+      <div className="clearfix mar_top5"></div>
+      <Footer />
+      <ScrollToTop />
+      <CookiesBanner />
     </>
   )
 }
