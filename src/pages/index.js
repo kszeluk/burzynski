@@ -1,4 +1,5 @@
 import React from "react"
+import { Helmet } from "react-helmet";
 
 import { Header } from "../components/header";
 import { Footer } from "../components/footer";
@@ -21,10 +22,16 @@ import facebook from "../styles/images/facebook.jpeg";
 import a from "../styles/images/a.jpeg";
 import cnm from "../styles/images/cnm.jpeg";
 import images from "../styles/images/images.jpeg";
-
+import favicon from "../styles/images/favicon.ico";
 
 export default () => (
   <>
+    <Helmet>
+      <meta charSet="utf-8" />
+      <title>Centrum Rehabilitacji Bartosz Burzyński</title>
+      <link rel="icon" href={favicon} />
+      <meta name="theme-color" content="#0089b9"/>
+    </Helmet>
     <Header
       activePage="home"
     />

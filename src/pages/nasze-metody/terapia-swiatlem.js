@@ -1,4 +1,6 @@
 import React from "react";
+import { Helmet } from "react-helmet";
+
 import { Header } from "../../components/header";
 import { Footer } from "../../components/footer";
 import { ScrollToTop } from "../../components/scrolltotop";
@@ -6,12 +8,20 @@ import { CookiesBanner } from "../../components/cookies";
 
 import swiatlo1 from "../../styles/images/wiatoterapia1.png";
 import swiatlo2 from "../../styles/images/wiatoterapia_2.jpg";
+import favicon from "../../styles/images/favicon.ico";
 import { ListSection } from "../../components/listSection";
 
 
 export default () => {
   return (
     <>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Terapia światłem - Centrum Rehabilitacji Bartosz Burzyński</title>
+        <link rel="icon" href={favicon} />
+        <meta name="theme-color" content="#0089b9"/>
+      </Helmet>
+
       <Header
         activePage="nasze-metody"
       />

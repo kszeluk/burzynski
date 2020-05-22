@@ -29,7 +29,7 @@ export const Header = ({ activePage }) => {
                         >
                           <a
                             href="#"
-                            onClick="return false;"
+                            onClick={() => { return false; }}
                             className={classNames({ active: activePage === "nasze-metody", selected: methodsVisible })}
                           >
                             {"Nasze metody "}
@@ -59,7 +59,9 @@ export const Header = ({ activePage }) => {
                         <li><a href="/nasze-oddzialy/" className={classNames({ active: activePage === "nasze-oddzialy"})}>Nasze Oddziały<span></span></a></li>
                         <li><a href="/kontakt/" className={classNames({ active: activePage === "kontakt"})}>Kontakt<span></span></a></li>
                       </ul>
-                      <select className="selectnav" id="selectnav1">
+                      <select className="selectnav" id="selectnav1" onChange={(event) => {
+                        window.location = event.target.value;
+                      }}>
                         <option value="">--- Navigation --- </option>
                         <option value="/" selected="">STORNA GŁÓWNA</option>
                         <option value="/o-firmie/">O FIRMIE</option>

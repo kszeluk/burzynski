@@ -1,4 +1,6 @@
 import React from "react";
+import { Helmet } from "react-helmet";
+
 import { Header } from "../components/header";
 import { Footer } from "../components/footer";
 import { ListSection } from "../components/listSection";
@@ -7,10 +9,18 @@ import { CookiesBanner } from "../components/cookies";
 
 import FB1 from "../styles/images/FB1.jpg";
 import lila from "../styles/images/275_lila.jpeg";
+import favicon from "../styles/images/favicon.ico";
 
 export default () => {
   return (
     <>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>O nas - Centrum Rehabilitacji Bartosz Burzyński</title>
+        <link rel="icon" href={favicon} />
+        <meta name="theme-color" content="#0089b9"/>
+      </Helmet>
+
       <Header
         activePage="o-nas"
       />

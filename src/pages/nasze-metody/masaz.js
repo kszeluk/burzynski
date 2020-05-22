@@ -1,14 +1,23 @@
 import React from "react";
+import { Helmet } from "react-helmet";
+
 import { Header } from "../../components/header";
 import { Footer } from "../../components/footer";
 import { ScrollToTop } from "../../components/scrolltotop";
 import { CookiesBanner } from "../../components/cookies";
 
 import masaz from "../../styles/images/masa_2.jpg";
+import favicon from "../../styles/images/favicon.ico";
 
 export default () => {
   return (
     <>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Masaz - Centrum Rehabilitacji Bartosz Burzyński</title>
+        <link rel="icon" href={favicon} />
+        <meta name="theme-color" content="#0089b9"/>
+      </Helmet>
       <Header
         activePage="nasze-metody"
       />

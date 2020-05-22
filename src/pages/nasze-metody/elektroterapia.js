@@ -1,4 +1,6 @@
 import React from "react";
+import { Helmet } from "react-helmet";
+
 import { Header } from "../../components/header";
 import { Footer } from "../../components/footer"
 import { ListSection } from "../../components/listSection";
@@ -7,10 +9,17 @@ import { CookiesBanner } from "../../components/cookies";
 
 import elektroterapia2 from "../../styles/images/elektroterapia2.png";
 import elektroterapia1 from "../../styles/images/elektroterapia1.png";
+import favicon from "../../styles/images/favicon.ico";
 
 export default () => {
   return (
     <>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Elektroterapia - Centrum Rehabilitacji Bartosz Burzyński</title>
+        <link rel="icon" href={favicon} />
+        <meta name="theme-color" content="#0089b9"/>
+      </Helmet>
       <Header
         activePage="nasze-metody"
       />
