@@ -50,13 +50,24 @@ export default () => {
 		        <form name="kontakt" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you">
               <input type="hidden" name="form-name" value="kontakt" />
               <p>
-                <label>Email: <input type="email" name="email" /></label>
+                <label>
+                  Email:
+                  <br />
+                  <input type="email" name="email" className="input_bg" />
+                  <br />
+                </label>
               </p>
               <p>
-                <label>Treść: <textarea type="text" name="tresc" placeholder="twoje zapytanie..." style={{ height: "250px" }} className="textarea_bg" required="" /></label>
+                <label>
+                  <br />
+                  Treść:
+                  <br />
+                  <textarea type="text" name="tresc" placeholder="twoje zapytanie..." style={{ height: "250px" }} className="textarea_bg" required="" />
+                  <br />
+                </label>
               </p>
               <p>
-                <button type="submit">Wyślij</button>
+                <button type="submit" className="comment_submit">Wyślij</button>
               </p>
             </form>
           </div>	

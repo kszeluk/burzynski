@@ -2641,6 +2641,10 @@ ul.post_meta_links_small {
 	border-radius: 4px;
 	color: #333;
 	text-transform: uppercase;
+	float: right;
+	margin-right: 40px;
+	line-height: 23px;
+	height: auto;
 }
 .comment_submit:hover {
 	background-color: #f9f9f9;
