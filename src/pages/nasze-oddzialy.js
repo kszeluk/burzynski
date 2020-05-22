@@ -14,6 +14,7 @@ export default () => {
       <Helmet>
         <meta charSet="utf-8" />
         <title>Nasze oddziały - Centrum Rehabilitacji Bartosz Burzyński</title>
+        <meta name="description" content="Proponujemy fizjoterapię, którą przeprowadzamy w profesjonalnym gabinecie oraz w domu pacjenta. Terapia prowadzona jest przez wyspecjalizowanych fizjoterapeutów każdorazowo ma ona charakter kompleksowy oraz indywidualny." />
         <link rel="icon" href={favicon} />
         <meta name="theme-color" content="#0089b9"/>
       </Helmet>
