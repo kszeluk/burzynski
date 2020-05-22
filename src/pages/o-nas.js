@@ -5,6 +5,9 @@ import { ListSection } from "../components/listSection";
 import { ScrollToTop } from "../components/scrolltotop";
 import { CookiesBanner } from "../components/cookies";
 
+import FB1 from "../styles/images/FB1.jpg";
+import lila from "../styles/images/275_lila.jpeg";
+
 export default () => {
   return (
     <>
@@ -20,7 +23,7 @@ export default () => {
       <div className="container">
         <div className="content_fullwidth">
           <div className="two_third">
-            <img className="image_left1" src="http://www.rehabilitacjaburzynski.pl/images/upload/FB1.jpg" alt="" width="204" height="306" /><br />
+            <img className="image_left1" src={FB1} alt="" width="204" height="306" /><br />
             <h2>Mgr <strong>Bartosz Burzyński</strong></h2>
             <p style={{ textAlign: "justify" }}>Ukończyłem 5-cio letnie studia magisterskie na Wydziale Fizjoterapii Akademii Wychowania Fizycznego we Wrocławiu ze specjalizacją z Psychomotoryki. Stale rozwijam swoje umiejętności manualne uczestnicząc w licznych, ciekawych kursach. Uwielbiam pracować z Pacjentami z problemami: ze stawem krzyżowo-biodrowym (szczególnie! ☺ ), z przepuklinami kręgosłupa oraz z problemami stawów obwodowych (kolana, barki i stawy skokowe).</p>
             <p style={{ textAlign: "justify" }}>&nbsp;</p>
@@ -127,7 +130,7 @@ export default () => {
         <p>&nbsp;</p>
 
         <div class="two_third">
-          <img class="image_left1" src="http://www.rehabilitacjaburzynski.pl/images/upload/o-nas/275_lila.jpg" alt="" width="206" height="275" />
+          <img class="image_left1" src={lila} alt="" width="206" height="275" />
           <h2>Mgr <strong>Lilianna Jaworska</strong></h2>
           <p style={{textAlign: "justify" }}>Jako fizjoterapeuta zwykłam patrzeć na Pacjenta holistycznie. Nie koncentruje się jedynie nad jego zauważalną dysfunkcją ale szukam pierwotnej przyczyny jej wystąpienia. Jestem doktorantką na Wydziale Fizjoterapii Akademii Wychowania Fizycznego we Wrocławiu, studentką Akademii Osteopatii w Poznaniu. Ukończyłam 2-letni kurs specjalizacyjny z Psychomotoryki.</p>
           <p style={{textAlign: "justify" }}>Niezmiernie ważne jest dla mnie sprzężenie zwrotne pomiędzy skutkami psychogennymi a zaburzeniami czynnościowymi narządu ruchu. Jedność ciała i umysłu po raz pierwszy poddałam badaniom naukowym podczas obrony pracy magisterskiej.</p>

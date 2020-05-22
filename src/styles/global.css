@@ -847,13 +847,13 @@ a.button_slider_02:hover {
 	height: 250px;
 }
 .joosa.fusectio1 .one_third .right.one {
-	background: url(./images/stany-pourazowy.jpg) no-repeat left top;
+	background: url(./images/stany-pourazowy.webp) no-repeat left top;
 }
 .joosa.fusectio1 .one_third .right.two {
-	background: url(./images/bole-kregoslupa.jpg) no-repeat left top;
+	background: url(./images/bole-kregoslupa.webp) no-repeat left top;
 }
 .joosa.fusectio1 .one_third .right.three {
-	background: url(./images/choroby-reumatyczne.jpg) no-repeat left top;
+	background: url(./images/choroby-reumatyczne.webp) no-repeat left top;
 }
 
 /* features section two */
@@ -4358,9 +4358,9 @@ a.knowmore_but:hover {
 #cookies span:hover {text-decoration:underline;}
 
 @font-face {
+	font-display: auto;
   font-family: 'FontAwesome';
-  src: url('./fonts/fontawesome-webfont.eot?v=4.0.1');
-  src: url('./fonts/fontawesome-webfont.eot?#iefix&v=4.0.1') format('embedded-opentype'),url('./fonts/fontawesome-webfont.woff?v=4.0.1') format('woff'),url('./fonts/fontawesome-webfont.ttf?v=4.0.1') format('truetype'),url('./fonts/fontawesome-webfont.svg?v=4.0.1#fontawesomeregular') format('svg');
+  src: local('FontAwesome'), url('./fonts/fontawesome-webfont.woff?v=4.0.1') format('woff');
   font-weight: normal;
   font-style: normal
 }
@@ -8694,7 +8694,7 @@ body {
 .slide-container {
 	width: 100%;
 	height: 100%;
-	background-color: rgba(0, 0, 0, 0);
+	background-color: "#f5f6f8";
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center top;
@@ -8703,15 +8703,15 @@ body {
 }
 
 .slide-container.slide-0 {
-	background-image: url("./images/slider-bg1.jpg");
+	background-image: url("./images/slider-bg1.webp");
 }
 
 .slide-container.slide-1 {
-	background-image: url("./images/spokoj.jpg");
+	background-image: url("./images/spokoj.webp");
 }
 
 .slide-container.slide-2 {
-	background-image: url("./images/masaz3.jpg");
+	background-image: url("./images/masaz3.webp");
 }
 
 .slide2 .slide-enter {

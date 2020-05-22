@@ -1,6 +1,6 @@
 import React from "react";
 
-import slide1 from "../../styles/images/slide1.png";
+import slide1 from "../../styles/images/slide1.webp";
 import { SliderTitle } from "./title";
 import { SliderSubTitle } from "./subtitle";
 import { SliderText } from "./slidertext";

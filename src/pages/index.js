@@ -1,20 +1,27 @@
 import React from "react"
-import { Header } from "../components/header";
 
-import elektroterapia from "../styles/images/elektroterapia.jpg";
-import ultradzwieki from "../styles/images/ultradzwieki.jpg";
-import terapiaswiatlem from "../styles/images/terapia-swiatlem.jpg";
-import kinesiology from "../styles/images/kinesiology-taping.jpg";
-import taping from "../styles/images/taping-sztywny.jpg";
-import masaz from "../styles/images/masaz.jpg";
-import osteopatia from "../styles/images/techniki-osteopatyczne.jpg";
-import logo from "../styles/images/logo-centrum-rehabilitacji.jpg";
-import lila from "../styles/images/lilianna-jaworska-new.jpg";
-import bartek from "../styles/images/bartosz-burzynski-new.jpg";
+import { Header } from "../components/header";
 import { Footer } from "../components/footer";
 import { Slider } from "../components/slider/slider";
 import { ScrollToTop } from "../components/scrolltotop";
 import { CookiesBanner } from "../components/cookies";
+
+import elektroterapia from "../styles/images/elektroterapia.jpeg";
+import ultradzwieki from "../styles/images/ultradzwieki.jpeg";
+import terapiaswiatlem from "../styles/images/terapia-swiatlem.jpeg";
+import kinesiology from "../styles/images/kinesiology-taping.jpeg";
+import taping from "../styles/images/taping-sztywny.jpeg";
+import masaz from "../styles/images/masaz.jpeg";
+import osteopatia from "../styles/images/techniki-osteopatyczne.jpeg";
+import logo from "../styles/images/logo-centrum-rehabilitacji.jpeg";
+import lila from "../styles/images/lilianna-jaworska-new.webp";
+import bartek from "../styles/images/bartosz-burzynski-new.webp";
+import google from "../styles/images/google.jpeg";
+import facebook from "../styles/images/facebook.jpeg";
+import a from "../styles/images/a.jpeg";
+import cnm from "../styles/images/cnm.jpeg";
+import images from "../styles/images/images.jpeg";
+
 
 export default () => (
   <>
@@ -232,11 +239,11 @@ export default () => (
       <div className="partners">
         <h3>Partnerzy</h3>                      
           <ul>
-            <li><a title="KKS Polonia Wrocław" href="http://poloniawroclaw1.futbolowo.pl/" target="_blank"><img src="http://www.rehabilitacjaburzynski.pl/images/upload/images.jpg" alt="" width="120" height="120" /></a></li>
-            <li><a title="Ćwiczenia na schorzenia" href="https://www.youtube.com/channel/UC2xqYwQL8foA74X0Nsf33vA" target="_blank"><img src="http://www.rehabilitacjaburzynski.pl/images/upload/cnm.jpg" alt="" width="120" height="120" /></a></li>
-            <li><a title="Fundacja Siwy Dym" href="http://www.siwydym.org.pl/" target="_blank"><img src="http://www.rehabilitacjaburzynski.pl/images/upload/a.png" alt="" width="167" height="69" /></a></li>
-            <li><a title="Facebook Centrum Rehabilitacji" href="https://www.facebook.com/pages/Centrum-Rehabilitacji/594940700650488?fref=ts" target="_blank"><img src="http://www.rehabilitacjaburzynski.pl/images/upload/facebook.jpg" alt="" width="150" height="84" /></a></li>
-            <li><a title="Google+ Centrum Rehabilitacji" href="https://plus.google.com/101629641010176846561/posts" target="_blank"><img src="http://www.rehabilitacjaburzynski.pl/images/upload/google.jpg" alt="" width="150" height="102" /></a></li>
+            <li><a title="KKS Polonia Wrocław" href="http://poloniawroclaw1.futbolowo.pl/" target="_blank"><img src={images} alt="" width="120" height="120" /></a></li>
+            <li><a title="Ćwiczenia na schorzenia" href="https://www.youtube.com/channel/UC2xqYwQL8foA74X0Nsf33vA" target="_blank"><img src={cnm} alt="" width="120" height="120" /></a></li>
+            <li><a title="Fundacja Siwy Dym" href="http://www.siwydym.org.pl/" target="_blank"><img src={a} alt="" width="167" height="69" /></a></li>
+            <li><a title="Facebook Centrum Rehabilitacji" href="https://www.facebook.com/pages/Centrum-Rehabilitacji/594940700650488?fref=ts" target="_blank"><img src={facebook} alt="" width="150" height="84" /></a></li>
+            <li><a title="Google+ Centrum Rehabilitacji" href="https://plus.google.com/101629641010176846561/posts" target="_blank"><img src={google} alt="" width="150" height="102" /></a></li>
           </ul>
         </div>
       </div>

@@ -5,6 +5,9 @@ import { ListSection } from "../../components/listSection";
 import { ScrollToTop } from "../../components/scrolltotop";
 import { CookiesBanner } from "../../components/cookies";
 
+import ultradwiki from "../../styles/images/ultradwiki.png";
+import ultradwiki2 from "../../styles/images/ultradwiki_2.jpg";
+
 export default () => {
   return (
     <>
@@ -26,7 +29,7 @@ export default () => {
           </div>
 
           <div class="one_third last">
-            <img class="image_left1" src="http://www.rehabilitacjaburzynski.pl/images/upload/ultradzwieki/ultradwiki.png" alt="" width="275" height="275" />
+            <img class="image_left1" src={ultradwiki} alt="" width="275" height="275" />
           </div>
           <div class="clearfix">&nbsp;</div>
           <div class="two_third">
@@ -34,7 +37,7 @@ export default () => {
             <p>Podczas zabiegu wykorzystywane są <strong>drgania mechaniczne</strong>. Efektem działania ultradźwięków na tkanki jest działanie mechaniczne zwane „mikromasażem”. Istotną składową ich działania jest wpływ na biochemię tkanek, co prowadzi do ich lepszego utleniania.</p>
           </div>
           <div class="one_third last">
-            <img class="image_left1" src="http://www.rehabilitacjaburzynski.pl/images/upload/ultradzwieki/ultradwiki_2.jpg" alt="" width="275" height="184" />
+            <img class="image_left1" src={ultradwiki2} alt="" width="275" height="184" />
           </div>
           <div class="clearfix">&nbsp;</div>
           <p>&nbsp;</p>

@@ -5,6 +5,9 @@ import { ListSection } from "../../components/listSection";
 import { ScrollToTop } from "../../components/scrolltotop";
 import { CookiesBanner } from "../../components/cookies";
 
+import elektroterapia2 from "../../styles/images/elektroterapia2.png";
+import elektroterapia1 from "../../styles/images/elektroterapia1.png";
+
 export default () => {
   return (
     <>
@@ -27,12 +30,12 @@ export default () => {
             <h3>O urządzeniu</h3>
             <p style={{ textAlign: "justify" }}><strong>Wireless Professional</strong> jest obecnie najbardziej zaawansowanym urządzeniem do elektroterapii, oferującym zwiększoną łatwość użytkowania i wygodę, jednocześnie oszczędzając czas i przestrzeń w celu optymalizacji leczenia pacjentów. Wprowadzając unikalny Mi-Technology™ do profesjonalnych programów stał się obecnie najlepszym poznanym na rynku urządzeniem do rehabilitacji funkcjonalnej. Urządzenie pozwala na prace w gabinecie, terenie i u pacjenta. Umożliwia rehabilitacje i elektrostymulacje mięśni podczas wykonywania ćwiczeń co znacząco podnosi efekty terapii. Jest doskonałym sposobem skutecznej walki z bólem przewlekłym i ostrym. Posiada certyfikat bezpieczeństwa wydany przez dystrybutora.</p>
           </div>
-          <div className="one_third last"><img className="image_left1" src="http://www.rehabilitacjaburzynski.pl/images/upload/elektroterapia/elektroterapia2.png" alt="" width="275" height="275" />&nbsp;</div>
+          <div className="one_third last"><img className="image_left1" src={elektroterapia2} alt="" width="275" height="275" />&nbsp;</div>
           <div className="two_third">
             <h3>O zabiegu</h3>
             <p style={{ textAlign: "justify" }}>Podczas terapii wykorzystuje się do leczenia prąd stały, modulowane prądy średniej częstotliwości oraz prądy impulsowe małej i średniej częstotliwości. Rodzaj prądu i jego dawka jest dobierana w zależności od leczonego schorzenia, a także wrażliwości pacjenta.</p>
           </div>
-          <div className="one_third last"><img className="image_left1" src="http://www.rehabilitacjaburzynski.pl/images/upload/elektroterapia/elektroterapia1.png" alt="" width="275" height="275" /></div>
+          <div className="one_third last"><img className="image_left1" src={elektroterapia1} alt="" width="275" height="275" /></div>
             <div className="clearfix">&nbsp;</div>
             <p>&nbsp;</p>
             <div className="one_third">

@@ -3,6 +3,7 @@ import { Header } from "../components/header";
 import { Footer } from "../components/footer";
 import { ScrollToTop } from "../components/scrolltotop";
 import { CookiesBanner } from "../components/cookies";
+import my from "../styles/images/my.jpg";
 
 export default () => {
   return (
@@ -25,7 +26,7 @@ export default () => {
             <p>Priorytetem dla Nas jest osiągnięcie wysokiej skuteczności terapii, dzięki czemu może nastąpić szybki powrót do pełni zdrowia, a tym samym do normalnego funkcjonowania. Cały czas poszerzamy swoje kwalifikacje poprzez specjalistyczne kursy doskonalące.</p>
           </div>
           <div class="one_third last">&nbsp;
-            <img src="http://www.rehabilitacjaburzynski.pl/images/upload/my.jpg" alt="" width="225" height="300" />
+            <img src={my} alt="" width="225" height="300" />
           </div>
         </div>
       </div>
