@@ -47,7 +47,8 @@ export default () => {
     		</div>
 		    <div style={{ width: "50%", float: "left" }} className="lefttBoxForm">
 		      <h2>Formularz kontaktowy</h2>
-		        <form name="kontakt" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+		        <form name="kontakt" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you">
+              <input type="hidden" name="form-name" value="kontakt" />
               <p>
                 <label>Email: <input type="email" name="email" /></label>
               </p>
