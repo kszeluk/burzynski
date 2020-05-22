@@ -47,9 +47,11 @@ export default () => {
     		</div>
 		    <div style={{ width: "50%", float: "left" }} className="lefttBoxForm">
 		      <h2>Formularz kontaktowy</h2>
-		        <form action="/kontakt/" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+		        <form name="kontakt" method="POST" data-netlify="true" netlify-honeypot="bot-field">
               <fieldset>
-                Email:<br /><input type="email" name="email" placeholder="podaj adres email..." className="input_bg" maxlength="50" required="" /><br /><br />
+                Email:<br />
+                <input type="email" name="email" placeholder="podaj adres email..." className="input_bg" maxlength="50" required="" />
+                <br /><br />
                 Treść:<br /><textarea type="text" name="tresc" placeholder="twoje zapytanie..." style={{ height: "250px" }} className="textarea_bg" required=""></textarea>
                 <br />
             		<input className="comment_submit" type="submit" value="Wyślij" style={{ float:"right", marginRight: "40px"}} />
