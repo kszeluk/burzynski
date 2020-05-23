@@ -53,6 +53,18 @@ export const Slider = () => {
   return (
     <AutoSizer>
       {({ width }) => {
+        if (width === 0 || width < 0) {
+          return (
+            <div style={{
+              width: "100vw",
+              height: "43vw",
+              maxHeight: "500px",
+              backgroundColor: "#f1f2f4",
+              float: "left"
+            }} />
+          );
+        }
+
         const height = Math.min(500, 0.43 * width);
 
         return (
