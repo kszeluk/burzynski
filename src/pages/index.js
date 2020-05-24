@@ -32,6 +32,7 @@ export default () => (
       <meta name="description" content="Proponujemy fizjoterapię, którą przeprowadzamy w profesjonalnym gabinecie oraz w domu pacjenta. Terapia prowadzona jest przez wyspecjalizowanych fizjoterapeutów każdorazowo ma ona charakter kompleksowy oraz indywidualny." />
         <link rel="icon" href={favicon} />
       <meta name="theme-color" content="#0089b9"/>
+      <html lang="pl" />
     </Helmet>
     <Header
       activePage="home"
