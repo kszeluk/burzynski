@@ -4,6 +4,8 @@ import {
   CSSTransition,
 } from 'react-transition-group';
 
+import logo from "../styles/images/logo.png";
+
 export const Header = ({ activePage }) => {
   const [methodsVisible, setMethodsVisible] = React.useState(false);
 
@@ -14,7 +16,9 @@ export const Header = ({ activePage }) => {
           <div className="wrapper">
               <div className="container">
                 <div className="logo_main">
-                  <a href="/" id="logo" />
+                  <a href="/" id="logo">
+                    <img src={logo} alt="logo" />
+                  </a>
                 </div>
                 <div className="menu_main">
                   <div className="joosa top_links">Telefon: <strong> +48 604 442 837</strong> <a href="/kontakt/" className="makeap_but">Umów wizytę</a></div>

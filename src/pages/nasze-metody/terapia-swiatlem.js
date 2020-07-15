@@ -1,37 +1,19 @@
 import React from "react";
-import { Helmet } from "react-helmet";
 
-import { Header } from "../../components/header";
-import { Footer } from "../../components/footer";
-import { ScrollToTop } from "../../components/scrolltotop";
-import { CookiesBanner } from "../../components/cookies";
+import { ListSection } from "../../components/listSection";
+import { PageTemplate } from "../../components/pageTemplate";
 
 import swiatlo1 from "../../styles/images/wiatoterapia1.png";
 import swiatlo2 from "../../styles/images/wiatoterapia_2.jpg";
-import favicon from "../../styles/images/favicon.ico";
-import { ListSection } from "../../components/listSection";
 
 
 export default () => {
   return (
-    <>
-      <Helmet>
-        <meta charSet="utf-8" />
-        <title>Terapia światłem - Centrum Rehabilitacji Bartosz Burzyński</title>
-        <meta name="description" content="Proponujemy fizjoterapię, którą przeprowadzamy w profesjonalnym gabinecie oraz w domu pacjenta. Terapia prowadzona jest przez wyspecjalizowanych fizjoterapeutów każdorazowo ma ona charakter kompleksowy oraz indywidualny." />
-        <link rel="icon" href={favicon} />
-        <meta name="theme-color" content="#0089b9"/>
-      </Helmet>
-
-      <Header
-        activePage="nasze-metody"
-      />
-      <div className="page_title">
-        <div className="container">
-          <div className="title"><h1>Terapia światłem</h1></div>
-        </div>
-      </div>
-
+    <PageTemplate
+      title="Terapia światłem"
+      pageTitle="Terapia światłem"
+      activePage="nasze-metody"
+    >
       <div className="container">
         <div className="content_fullwidth">
 
@@ -98,12 +80,6 @@ export default () => {
           </div>
         </div>
       </div>
-
-
-      <div className="clearfix mar_top5"></div>
-      <Footer />
-      <ScrollToTop />
-      <CookiesBanner />
-    </>
+    </PageTemplate>
   )
 }

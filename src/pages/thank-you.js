@@ -1,35 +1,13 @@
 import React from "react";
-import { Helmet } from "react-helmet";
 
-import { Header } from "../components/header";
-import { Footer } from "../components/footer";
-import { ScrollToTop } from "../components/scrolltotop";
-import { CookiesBanner } from "../components/cookies";
-
-import favicon from "../styles/images/favicon.ico";
+import { PageTemplate } from "../components/pageTemplate";
 
 
 export default () => {
   return (
-    <>
-      <Helmet>
-        <meta charSet="utf-8" />
-        <title>Centrum Rehabilitacji Bartosz Burzyński</title>
-        <meta name="description" content="Proponujemy fizjoterapię, którą przeprowadzamy w profesjonalnym gabinecie oraz w domu pacjenta. Terapia prowadzona jest przez wyspecjalizowanych fizjoterapeutów każdorazowo ma ona charakter kompleksowy oraz indywidualny." />
-                <link rel="icon" href={favicon} />
-        <meta name="theme-color" content="#0089b9"/>
-      </Helmet>
-
-      <Header
-        activePage=""
-      />
-
-      <div className="page_title">
-        <div className="container">
-          <div className="title"><h1>Dziękujemy</h1></div>
-        </div>
-      </div>
-
+    <PageTemplate
+      title="Dziękujemy"
+    >
       <div className="container">
         <div className="content_fullwidth">
           <div style={{ width: "100%", float:"right"}} className="rightBoxForm">
@@ -46,12 +24,6 @@ export default () => {
           </div>	
     		</div>
       </div>
-
-      <div class="clearfix mar_top5" />
-
-      <Footer />
-      <ScrollToTop />
-      <CookiesBanner />
-    </>
+    </PageTemplate>
   )
 }

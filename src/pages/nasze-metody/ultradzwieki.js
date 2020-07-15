@@ -1,37 +1,18 @@
 import React from "react";
-import { Helmet } from "react-helmet";
 
-import { Header } from "../../components/header";
-import { Footer } from "../../components/footer";
 import { ListSection } from "../../components/listSection";
-import { ScrollToTop } from "../../components/scrolltotop";
-import { CookiesBanner } from "../../components/cookies";
+import { PageTemplate } from "../../components/pageTemplate";
 
 import ultradwiki from "../../styles/images/ultradwiki.png";
 import ultradwiki2 from "../../styles/images/ultradwiki_2.jpg";
-import favicon from "../../styles/images/favicon.ico";
 
 export default () => {
   return (
-    <>
-      <Helmet>
-        <meta charSet="utf-8" />
-        <title>Ultradźwięki - Centrum Rehabilitacji Bartosz Burzyński</title>
-        <meta name="description" content="Proponujemy fizjoterapię, którą przeprowadzamy w profesjonalnym gabinecie oraz w domu pacjenta. Terapia prowadzona jest przez wyspecjalizowanych fizjoterapeutów każdorazowo ma ona charakter kompleksowy oraz indywidualny." />
-        <link rel="icon" href={favicon} />
-        <meta name="theme-color" content="#0089b9"/>
-      </Helmet>
-
-      <Header
-        activePage="nasze-metody"
-      />
-
-      <div className="page_title">
-        <div className="container">
-          <div className="title"><h1>Ultradźwięki</h1></div>
-        </div>
-      </div>
-
+    <PageTemplate
+      activePage="nasze-metody"
+      title="Ultradźwięki"
+      pageTitle="Ultradźwięki"
+    >
       <div class="container">
         <div class="content_fullwidth">
           <div class="two_third">
@@ -102,12 +83,6 @@ export default () => {
           </div>
         </div>
       </div>
-
-      <div class="clearfix mar_top5"></div>
-
-      <Footer />
-      <ScrollToTop />
-      <CookiesBanner />
-    </>
+    </PageTemplate>
   )
 }

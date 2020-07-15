@@ -6,12 +6,12 @@ import classNames from "classnames";
 import { TeamSlide } from "./teamslide";
 import { GabinetSlide } from "./gabinetslide";
 import { MySlide } from "./myslide";
-import { CSSTransition, TransitionGroup } from "react-transition-group";
+import { CSSTransition } from "react-transition-group";
 
 export const Slider = () => {
   const [slideNumber, setSlideNumber] = React.useState(0);
   const timeout = React.useRef(null);
-  const nextSlide = (currentSlideNumber, setNextSlide = true) => {
+  const nextSlide = React.useCallback((currentSlideNumber, setNextSlide = true) => {
     if (timeout.current) {
       clearTimeout(timeout.current);
     }
@@ -25,7 +25,7 @@ export const Slider = () => {
       setSlideNumber(newSlideNumber);
     }
     timeout.current = setTimeout(() => nextSlide(newSlideNumber), 8000);
-  }
+  }, []);
 
   const prevSlide = (currentSlideNumber) => {
     if (timeout.current) {
@@ -47,7 +47,7 @@ export const Slider = () => {
     return () => {
       clearTimeout(timeout.current);
     }
-  }, []);
+  }, [nextSlide]);
 
 
   return (

@@ -1,36 +1,18 @@
 import React from "react";
-import { Helmet } from "react-helmet";
 
-import { Header } from "../components/header";
-import { Footer } from "../components/footer";
 import { ListSection } from "../components/listSection";
-import { ScrollToTop } from "../components/scrolltotop";
-import { CookiesBanner } from "../components/cookies";
+import { PageTemplate } from "../components/pageTemplate";
 
 import FB1 from "../styles/images/FB1.jpg";
 import lila from "../styles/images/275_lila.jpeg";
-import favicon from "../styles/images/favicon.ico";
 
 export default () => {
   return (
-    <>
-      <Helmet>
-        <meta charSet="utf-8" />
-        <title>O nas - Centrum Rehabilitacji Bartosz Burzyński</title>
-        <meta name="description" content="Proponujemy fizjoterapię, którą przeprowadzamy w profesjonalnym gabinecie oraz w domu pacjenta. Terapia prowadzona jest przez wyspecjalizowanych fizjoterapeutów każdorazowo ma ona charakter kompleksowy oraz indywidualny." />
-        <link rel="icon" href={favicon} />
-        <meta name="theme-color" content="#0089b9"/>
-      </Helmet>
-
-      <Header
-        activePage="o-nas"
-      />
-      <div className="page_title">
-        <div className="container">
-          <div className="title"><h1>Oferta</h1></div>
-        </div>
-      </div>
-
+    <PageTemplate
+      title="O nas"
+      pageTitle="O nas"
+      activePage="o-nas"
+    >
       <div className="container">
         <div className="content_fullwidth">
           <div className="two_third">
@@ -182,10 +164,6 @@ export default () => {
         <p>&nbsp;</p>
         <div class="two_third">&nbsp;</div>
       </div>
-      <div class="clearfix mar_top5"></div>
-      <Footer />
-      <ScrollToTop />
-      <CookiesBanner />
-    </>
+    </PageTemplate>
   )
 }

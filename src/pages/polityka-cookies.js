@@ -48,9 +48,9 @@ export default () => {
             <h2>Usuwanie plików cookies</h2>
             <p>Każdy rodzaj przeglądarki oferuje możliwość blokowania i kasowania plików cookie. Więcej informacji na temat zarządzania plikami cookie można uzyskać, korzystając z poniższych linków.</p>
             <p>
-              <br /> » <a href="http://windows.microsoft.com/en-GB/windows7/How-to-manage-cookies-in-Internet-Explorer-9" target="_blank">Internet Explorer</a><br /> » <a href="http://support.mozilla.org/en-US/kb/cookies-information-websites-store-on-your-computer?redirectlocale=en-US&amp;redirectslug=Cookies" target="_blank">Firefox</a>
-              <br /> » <a href="http://support.google.com/chrome/bin/answer.py?hl=en&amp;answer=95647" target="_blank">Google Chrome</a>
-              <br /> » <a href="http://support.apple.com/kb/PH5042" target="_blank">Safari</a>
+              <br /> » <a href="http://windows.microsoft.com/en-GB/windows7/How-to-manage-cookies-in-Internet-Explorer-9" target="_blank" rel="noopener noreferrer">Internet Explorer</a><br /> » <a href="http://support.mozilla.org/en-US/kb/cookies-information-websites-store-on-your-computer?redirectlocale=en-US&amp;redirectslug=Cookies" target="_blank" rel="noopener noreferrer">Firefox</a>
+              <br /> » <a href="http://support.google.com/chrome/bin/answer.py?hl=en&amp;answer=95647" target="_blank" rel="noopener noreferrer">Google Chrome</a>
+              <br /> » <a href="http://support.apple.com/kb/PH5042" target="_blank" rel="noopener noreferrer">Safari</a>
             </p>
           </div>
       </div>

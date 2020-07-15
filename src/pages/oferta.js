@@ -1,33 +1,15 @@
 import React from "react";
-import { Helmet } from "react-helmet";
 
-import { Header } from "../components/header";
-import { Footer } from "../components/footer";
 import { ListSection } from "../components/listSection";
-import { ScrollToTop } from "../components/scrolltotop";
-import { CookiesBanner } from "../components/cookies";
-import favicon from "../styles/images/favicon.ico";
+import { PageTemplate } from "../components/pageTemplate";
 
 export default () => {
   return (
-    <>
-      <Helmet>
-        <meta charSet="utf-8" />
-        <title>Oferta - Centrum Rehabilitacji Bartosz Burzyński</title>
-        <meta name="description" content="Proponujemy fizjoterapię, którą przeprowadzamy w profesjonalnym gabinecie oraz w domu pacjenta. Terapia prowadzona jest przez wyspecjalizowanych fizjoterapeutów każdorazowo ma ona charakter kompleksowy oraz indywidualny." />
-        <link rel="icon" href={favicon} />
-        <meta name="theme-color" content="#0089b9"/>
-      </Helmet>
-
-      <Header
-        activePage="oferta"
-      />
-      <div class="page_title">
-          <div class="container">
-              <div class="title"><h1>Oferta</h1></div>
-          </div>
-      </div>
-
+    <PageTemplate
+      title="Oferta"
+      pageTitle="Oferta"
+      activePage="oferta"
+    >
       <div class="container">
         <div class="content_fullwidth">
           <div class="big_text1">Z czym możesz się do nas zgłosić?</div>
@@ -171,10 +153,6 @@ export default () => {
           <div class="clearfix divider_line3">&nbsp;</div>
         </div>
       </div>
-      <div class="clearfix mar_top5"></div>
-      <Footer />
-      <ScrollToTop />
-      <CookiesBanner />
-    </>
+    </PageTemplate>
   )
 }

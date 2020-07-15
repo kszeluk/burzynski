@@ -6,7 +6,6 @@
 
 module.exports = {
   plugins: [
-    `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-manifest`,
@@ -18,6 +17,7 @@ module.exports = {
         theme_color: `#6b37bf`,
         display: `standalone`,
         icon: `src/styles/images/logo.png`,
+        cache_busting_mode: `none`
       },
     },
   ],

@@ -1,36 +1,18 @@
 import React from "react";
-import { Helmet } from "react-helmet";
 
-import { Header } from "../../components/header";
-import { Footer } from "../../components/footer"
 import { ListSection } from "../../components/listSection";
-import { ScrollToTop } from "../../components/scrolltotop";
-import { CookiesBanner } from "../../components/cookies";
+import { PageTemplate } from "../../components/pageTemplate";
 
 import elektroterapia2 from "../../styles/images/elektroterapia2.png";
 import elektroterapia1 from "../../styles/images/elektroterapia1.png";
-import favicon from "../../styles/images/favicon.ico";
 
 export default () => {
   return (
-    <>
-      <Helmet>
-        <meta charSet="utf-8" />
-        <title>Elektroterapia - Centrum Rehabilitacji Bartosz Burzyński</title>
-        <meta name="description" content="Proponujemy fizjoterapię, którą przeprowadzamy w profesjonalnym gabinecie oraz w domu pacjenta. Terapia prowadzona jest przez wyspecjalizowanych fizjoterapeutów każdorazowo ma ona charakter kompleksowy oraz indywidualny." />
-        <link rel="icon" href={favicon} />
-        <meta name="theme-color" content="#0089b9"/>
-      </Helmet>
-      <Header
-        activePage="nasze-metody"
-      />
-
-      <div className="page_title">
-        <div className="container">
-          <div className="title"><h1>Elektroterapia</h1></div>
-        </div>
-      </div>
-
+    <PageTemplate
+      title="Elektroterapia"
+      pageTitle="Elektroterapia"
+      activePage="nasze-metody"
+    >
       <div className="container">
         <div className="content_fullwidth">
           <h3><strong>Z PIERWSZYM NA SWIECIE BEZPRZEWODOWYM APARATEM DO ELEKTROTERAPII</strong></h3>
@@ -89,12 +71,6 @@ export default () => {
             </div>
         </div>
       </div>
-
-      <div class="clearfix mar_top5"></div>
-
-      <Footer />
-      <ScrollToTop />
-      <CookiesBanner />
-    </>
+    </PageTemplate>
   )
 }
